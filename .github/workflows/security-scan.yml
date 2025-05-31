@@ -15,5 +15,5 @@ jobs:
            if: always()
            with:
                name: fluid-attack-report
-               path: fluid-attack-report.csv
+               path: ./fluid-attack-report.csv
 
