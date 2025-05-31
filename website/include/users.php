@@ -27,7 +27,7 @@ class Users
       }
    }
 
-   function create_user($username, $pass, $firstname, $lastname, $vuln = False)
+   function create_user($username, $pass, $firstname, $lastname, $vuln = True)
    {
       $salt = mt_rand(0, 900);
       $salt = base64_encode($salt);
