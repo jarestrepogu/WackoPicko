@@ -10,9 +10,10 @@ jobs:
            with:
              args: skims scan ./pipeline-config.yml
 
-         - name: upload file
-            if: always()
-            uses: actions/checkout@v4
-            with:
+         - name: Upload file
+           uses: actions/checkout@v4
+           if: always()
+           with:
                name: fluid-attack-report
                path: fluid-attack-report.csv
+
