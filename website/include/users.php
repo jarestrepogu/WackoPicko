@@ -82,7 +82,7 @@ class Users
       session_unset();
    }
 
-   function check_login($username, $pass, $vuln = False)
+   function check_login($username, $pass, $vuln = True)
    {
       if ($vuln)
       {
