@@ -11,9 +11,9 @@ jobs:
              args: skims scan ./pipeline-config.yml
 
          - name: Upload file
-           uses: actions/checkout@v4
            if: always()
+           uses: actions/upload-artifact@v4
            with:
                name: fluid-attack-report
-               path: ./fluid-attack-report.csv
+               path: fluid-attack-report.csv
 
